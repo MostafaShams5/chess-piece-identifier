@@ -27,7 +27,7 @@ The model is built with PyTorch and deployed through a user-friendly Streamlit w
 
 1. Clone this repository:
 ```
-git clone https://github.com/yourusername/chess-piece-identifier.git
+git clone https://github.com/MostafaShams5/chess-piece-identifier.git
 cd chess-piece-identifier
 ```
 
