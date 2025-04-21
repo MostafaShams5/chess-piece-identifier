@@ -93,13 +93,13 @@ def train_model(dataset_path):
 
     # Training parameters
     criterion = nn.CrossEntropyLoss()
-    optimizer = optim.Adam(model.parameters(), lr=0.00, weight_decay=1e-5)
-    num_epochs = 50
+    optimizer = optim.Adam(model.parameters(), lr=0.001, weight_decay=1e-5)
+    num_epochs = 100
 
     # Training loop
     losses = []
     for epoch in range(num_epochs):
-        if epoch == 45:
+        if epoch == 65:
             for param_group in optimizer.param_groups:
                 param_group['lr'] = 0.0001
 
