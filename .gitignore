@@ -2,6 +2,7 @@
 __pycache__/
 *.py[cod]
 *$py.class
+.pytest_cache/
 
 # Virtual environments
 venv/
@@ -13,12 +14,15 @@ dist/
 build/
 *.egg-info/
 
-# PyTorch model files
+# PyTorch model files (large files)
 *.pth
 
+# Jupyter Notebook
+.ipynb_checkpoints
 
-# VS Code settings
+# IDE settings
 .vscode/
+.idea/
 
 # Streamlit
 .streamlit/
@@ -27,11 +31,23 @@ build/
 Chess/
 Chessman-image-dataset/
 
-# Images
+# Images (avoid uploading all images, include specific ones as needed)
 *.jpg
 *.jpeg
 *.png
+*.gif
 
-
-# Exceptions
+# Exceptions (include specific images for documentation)
 !UsageExample.png
+
+# Logs
+*.log
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
