@@ -23,6 +23,20 @@ The model is built with PyTorch and deployed through a user-friendly Streamlit w
 - Confidence scores visualization for each prediction
 - Simple and intuitive user interface
 
+## Dataset and Pre-trained Model
+
+Due to size constraints, the dataset and pre-trained model are not included in this repository.
+
+### Download Links:
+- [Pre-trained model (TheTrainedModel.pth)](https://drive.google.com/file/d/1-BX5j2DeKPEILSsk8PnK1m6xNexP2_wT/view?usp=drive_link)
+- [Chess piece dataset](https://drive.google.com/drive/folders/1-YmFt46roRVnEhXTih1MpIzXsK9r1YK6?usp=drive_link)
+
+### Alternative: Train Your Own Model
+If you prefer to train your own model, organize your chess piece images according to the dataset structure described above, and run:
+
+```python
+from chess_piece_identifier import train_model
+model, device, class_names = train_model('path/to/your/dataset')
 ## Installation
 
 1. Clone this repository:
